@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: agentic-weather-chat
+Version: 0.0.1
+Author: Manas
+Author-email: manasmrt10@gmail.com@gmail.com
+Requires-Dist: langchain
+Requires-Dist: langgraph
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
