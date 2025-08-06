@@ -4,14 +4,6 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from utils.config_loader import load_config
 from langchain_groq import ChatGroq
 
-import os
-from dotenv import load_dotenv
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain_google_genai import ChatGoogleGenerativeAI
-from utils.config_loader import load_config
-from langchain_groq import ChatGroq
-
 class ModelLoader:
     """
     A utility class to load embedding models and LLM models.
@@ -46,4 +38,4 @@ class ModelLoader:
         print("LLM loading...")
         model_name=self.config["llm"]["groq"]["model_name"]
         groq_model=ChatGroq(model=model_name,api_key=self.groq_api_key)
-        print(groq_model.invoke("hi"))
+        return groq_model

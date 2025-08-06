@@ -88,7 +88,7 @@ class DataIngestion:
                 
                 qdrant_client.create_collection(
                     collection_name=index_name,
-                    vectors_config=VectorParams(size=100, distance=Distance.COSINE)
+                    vectors_config=VectorParams(size=768, distance=Distance.COSINE)
                     )
 
             vector_store = QdrantVectorStore(

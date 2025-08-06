@@ -6,3 +6,7 @@ class RagToolSchema(BaseModel):
     
 class WeatherApiSchema(BaseModel):
     city: str
+    
+    
+class QuestionRequest(BaseModel):
+    question: str

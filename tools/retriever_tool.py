@@ -12,7 +12,7 @@ model_loader=ModelLoader()
 config = load_config()
 
 @tool(args_schema=RagToolSchema)
-def retriever_tool(question):
+def retriever_node(question):
     """This is retriever tool
     Use this tool when the answer to query requires you to take answer questions
     about weather history, climate patterns, environmental and geographical changes,
