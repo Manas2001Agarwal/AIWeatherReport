@@ -13,10 +13,9 @@ config = load_config()
 
 @tool(args_schema=RagToolSchema)
 def retriever_node(question):
-    """This is retriever tool
-    Use this tool when the answer to query requires you to take answer questions
-    about weather history, climate patterns, environmental and geographical changes,
-    or climate history of particular place 
+    """This is tool acts as a person who is an expert knowledge on climate/weather pattern
+    Use this tool answer questions about weather history, climate patterns, environmental 
+    and geographical changes, monsoon pattern or climate history of particular place or country 
     """
     index_name = config["vector_db"]["index_name"]
     embedding_model = model_loader.load_embeddings()
